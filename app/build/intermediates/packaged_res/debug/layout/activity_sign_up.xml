@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/vdexsignupbg_">
+
+    <TextView
+        android:id="@+id/sutxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_regular"/>
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sutxt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#B6BBC4"
+        android:drawableLeft="@drawable/ic_fornames"
+        android:drawablePadding="20dp"
+        android:hint="First name"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#F0ECE5" />
+
+    <EditText
+        android:id="@+id/sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fname"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#B6BBC4"
+        android:drawableLeft="@drawable/ic_fornames"
+        android:drawablePadding="20dp"
+        android:hint="Surname"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#F0ECE5" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sname"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#B6BBC4"
+        android:drawableLeft="@drawable/ic_outline_person_24"
+        android:drawablePadding="20dp"
+        android:hint="Username"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#F0ECE5" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#B6BBC4"
+        android:drawableLeft="@drawable/ic_outline_lock_24"
+        android:drawablePadding="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#F0ECE5"/>
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/black"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        android:drawableRight="@drawable/ic_signup"
+        app:cornerRadius="11dp"/>
+
+    <ImageView
+        android:id="@+id/vdexsignuppagelogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="190dp"
+        android:layout_below="@+id/signupbtn"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/vdexlogo" />
+
+    <TextView
+        android:id="@+id/vdextxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/vdexsignuppagelogo"
+        android:text="VDEX"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_regular"/>
+
+    <TextView
+        android:id="@+id/sssv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/vdextxt"
+        android:text="Stay Safe. Stay Vaccinated."
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:fontFamily="@font/roboto_regular"/>
+
+</RelativeLayout>

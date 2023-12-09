@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity"
+    android:background="@drawable/vdexbg_">
+
+        <ImageView
+            android:id="@+id/vdexloginpagelogo"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/vdexlogo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/vdextxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/vdexloginpagelogo"
+            android:text="VDEX"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <TextView
+            android:id="@+id/sssv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/vdextxt"
+            android:text="Stay Safe. Stay Vaccinated."
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <TextView
+            android:id="@+id/logintxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sssv"
+            android:text="LOGIN"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logintxt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#B6BBC4"
+            android:drawableLeft="@drawable/ic_outline_person_24"
+            android:drawablePadding="20dp"
+            android:hint="Username"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="#F0ECE5" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B6BBC4"
+            android:drawableLeft="@drawable/ic_outline_lock_24"
+            android:drawablePadding="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="#F0ECE5"/>
+
+        <TextView
+            android:id="@+id/forgetpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="1dp"
+            android:text="Forgot password?"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgetpass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:drawableRight="@drawable/ic_baseline_login_24"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            app:cornerRadius="11dp"/>
+
+        <Button
+            android:id="@+id/loginadminbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/black"
+            android:drawableRight="@drawable/ic_outline_admin"
+            android:text="LOGIN AS ADMIN"
+            android:textColor="@color/white"
+            app:cornerRadius="11dp"/>
+
+        <TextView
+            android:id="@+id/donthaveacc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignEnd="@id/loginadminbtn"
+            android:layout_below="@id/loginadminbtn"
+            android:text="Don't have account?"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/signupherebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/donthaveacc"
+            android:backgroundTint="@color/black"
+            android:drawableRight="@drawable/ic_signuphere"
+            android:text="SIGN UP HERE"
+            android:textColor="@color/white"
+            app:cornerRadius="11dp" />
+
+</RelativeLayout>
